@@ -1,0 +1,26 @@
+pipeline{
+    agent any
+stages {
+  stage('build') {
+    steps {
+        echo 'make sure the pipeline is on point'
+        input 'wait for interactive before proceeding'
+      // One or more steps need to be included within the steps block.
+    }
+  }
+
+  stage('testing') {
+    steps {
+      // One or more steps need to be included within the steps block.
+    }
+  }
+
+  stage('deploy') {
+    steps {
+      // One or more steps need to be included within the steps block.
+    }
+  }
+
+}
+
+}
